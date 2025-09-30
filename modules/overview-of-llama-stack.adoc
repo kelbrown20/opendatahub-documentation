@@ -46,38 +46,47 @@ The `LlamaStackDistribution` custom resource includes various API types and prov
 |*API type* |*Providers* |*Support Status*
 |Agents 
 |`inline::meta-reference` 
-|Developer Preview
+|Technology Preview
 
 |Datasetio 
 |
 `inline::localfs` +
 `remote::huggingface` 
-|Developer Preview
+|Technology Preview
 
 |Eval 
-|`remote::lmeval` 
-|Developer Preview
+|`remote::trustyai_lmeval` 
+|Technology Preview
+
+|Files
+|`inline::localfs`
+|Technology Preview
 
 |Inference 
 |
 `inline::sentence-transformers` +
-`remote::vllm` 
-|Developer Preview
+`remote::vllm` +
+`remote::azure` +
+`remote::bedrock` +
+`remote::openai` +
+`remote::vertexai` +
+`remote::watsonx` 
+|Technology Preview
 
 |Safety 
 |`remote::trustyai_fms` 
-|Developer Preview 
+|Technology Preview
 
 |Scoring 
 |
 `inline::llm-as-a-judge` +
-`inline:basic` +
+`inline::basic` +
 `inline::braintrust` 
-|Developer Preview
+|Technology Preview
 
 |Telemetry 
 |`inline::meta-reference` 
-|Developer Preview
+|Technology Preview
 
 |Tool_runtime 
 |
@@ -85,11 +94,12 @@ The `LlamaStackDistribution` custom resource includes various API types and prov
 `remote::brave-search` +
 `remote::tavily-search` +
 `remote::model-context-protocol` 
-|Developer Preview
+|Technology Preview
 
 |Vector_io 
-|`inline::milvus` 
-|Developer Preview
+|`inline::milvus` +
+`remote::milvus`
+|Technology Preview
 |===
 
 
